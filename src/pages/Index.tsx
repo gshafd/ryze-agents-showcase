@@ -3,6 +3,7 @@ import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import { agents, industries } from "@/data/agents";
 import { AgentCard } from "@/components/AgentCard";
+import QuickAccessGrid from "@/components/QuickAccessGrid";
 
 const Index = () => {
   return (
@@ -10,6 +11,7 @@ const Index = () => {
       <NavBar />
       <Hero />
       <main>
+        <QuickAccessGrid />
         {industries.map((ind) => {
           const list = agents.filter((a) => a.industry === ind.key);
           return (
