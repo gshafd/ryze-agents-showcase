@@ -24,15 +24,18 @@ const QuickAccessGrid = () => {
                       className="group block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-lg"
                       aria-label={`${agent.name} details`}
                     >
-                        <div className="flex flex-col items-center rounded-lg border border-border bg-card/50 p-4 md:p-5 transition-transform duration-200 hover:scale-105 hover:ring-2 hover:ring-primary/40 hover:border-primary/40 shadow-sm hover:shadow-lg cursor-pointer">
-                          <Badge variant="outline" className="mb-3 text-[10px] leading-none px-2 py-0.5 rounded-full">
-                            {industryMap[agent.industry] || agent.industry}
-                          </Badge>
-                          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-accent/20 ring-1 ring-accent/30 transition-colors group-hover:bg-accent/30">
-                            {Icon ? <Icon className="size-6 text-primary" aria-hidden /> : null}
-                          </div>
-                          <span className="mt-3 text-center text-sm font-semibold text-foreground">{agent.name}</span>
+                      <div className="relative flex h-40 w-36 md:h-44 md:w-40 flex-col items-center justify-center rounded-lg border border-border bg-card/50 p-4 transition-transform duration-200 hover:scale-105 hover:ring-2 hover:ring-primary/40 hover:border-primary/40 shadow-sm hover:shadow-lg cursor-pointer">
+                        <Badge
+                          variant="outline"
+                          className="absolute -top-3 left-1/2 -translate-x-1/2 text-xs md:text-sm font-semibold px-3 py-1 rounded-full bg-background/90 backdrop-blur border-border shadow-sm"
+                        >
+                          {industryMap[agent.industry] || agent.industry}
+                        </Badge>
+                        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-accent/20 ring-1 ring-accent/30 transition-colors group-hover:bg-accent/30">
+                          {Icon ? <Icon className="size-6 text-primary" aria-hidden /> : null}
                         </div>
+                        <span className="mt-3 text-center text-sm font-semibold text-foreground leading-tight">{agent.name}</span>
+                      </div>
                     </Link>
                   </li>
                 );
