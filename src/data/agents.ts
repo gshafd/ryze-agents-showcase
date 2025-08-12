@@ -79,15 +79,6 @@ export const agents: Agent[] = [
       "An AI‑powered SEO agent for Shopify that monitors 200+ ranking factors, rewrites product descriptions using competitive gap analysis, adjusts meta structures based on algorithm updates, and deploys schema markup dynamically—achieving first‑page rankings for 78% of target keywords within 90 days.",
   },
 
-  // Cybersecurity
-  {
-    slug: "cyber-threat-interceptor",
-    name: "Cyber Threat Interceptor",
-    industry: "Cybersecurity",
-    icon: "Shield",
-    description:
-      "Zero‑trust security orchestrator that correlates anomalies across network, endpoint, and user behavior streams, deploys deception technology to trap advanced persistent threats, executes automated incident response playbooks in under 10 seconds, and patches vulnerabilities through self‑healing protocols—neutralizing 94% of threats before impact.",
-  },
 
   // Manufacturing / Retail / Logistics
   {
@@ -105,6 +96,5 @@ export const industries: { key: string; title: string; anchor: string }[] = [
   { key: "Finance", title: "Finance", anchor: "finance" },
   { key: "Higher Education", title: "Higher Education", anchor: "higher-education" },
   { key: "E-Commerce", title: "E-Commerce", anchor: "e-commerce" },
-  { key: "Cybersecurity", title: "Cybersecurity", anchor: "cybersecurity" },
-  { key: "Manufacturing-Retail-Logistics", title: "Manufacturing / Retail / Logistics", anchor: "manufacturing-retail-logistics" },
+  { key: "Manufacturing-Retail-Logistics", title: "Logistics", anchor: "logistics" },
 ];

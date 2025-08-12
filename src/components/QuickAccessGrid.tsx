@@ -14,7 +14,7 @@ const QuickAccessGrid = () => {
         </header>
         <nav aria-label="Quick access agents">
           <div className="mx-auto max-w-5xl">
-            <ul className="grid grid-cols-5 gap-6 justify-items-center">
+            <ul className="grid grid-cols-2 sm:grid-cols-3 gap-6 justify-items-center w-fit mx-auto">
               {agents.map((agent) => {
                 const Icon = (Icons as any)[agent.icon] as React.ComponentType<{ className?: string; "aria-hidden"?: boolean }>;
                 return (
@@ -27,7 +27,7 @@ const QuickAccessGrid = () => {
                       <div className="relative flex h-40 w-36 md:h-44 md:w-40 flex-col items-center justify-center rounded-lg border border-border bg-card/50 p-4 transition-transform duration-200 hover:scale-105 hover:ring-2 hover:ring-primary/40 hover:border-primary/40 shadow-sm hover:shadow-lg cursor-pointer">
                         <Badge
                           variant="outline"
-                          className="absolute -top-3 left-1/2 -translate-x-1/2 text-xs md:text-sm font-semibold px-3 py-1 rounded-full bg-background/90 backdrop-blur border-border shadow-sm"
+                          className={`absolute -top-3 left-1/2 -translate-x-1/2 font-semibold px-3 py-1 rounded-full bg-background/90 backdrop-blur border-border shadow-sm whitespace-nowrap ${agent.industry === 'E-Commerce' ? 'text-[10px] md:text-xs' : 'text-xs md:text-sm'}`}
                         >
                           {industryMap[agent.industry] || agent.industry}
                         </Badge>
