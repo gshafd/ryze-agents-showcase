@@ -106,5 +106,5 @@ export const industries: { key: string; title: string; anchor: string }[] = [
   { key: "Higher Education", title: "Higher Education", anchor: "higher-education" },
   { key: "E-Commerce", title: "E-Commerce", anchor: "e-commerce" },
   { key: "Cybersecurity", title: "Cybersecurity", anchor: "cybersecurity" },
-  { key: "Manufacturing-Retail-Logistics", title: "Logistics", anchor: "manufacturing-retail-logistics" },
+  { key: "Manufacturing-Retail-Logistics", title: "Manufacturing / Retail / Logistics", anchor: "manufacturing-retail-logistics" },
 ];
