@@ -7,7 +7,7 @@ const QuickAccessGrid = () => {
   const industryMap = Object.fromEntries(industries.map((i) => [i.key, i.title]));
   return (
     <section id="quick-access" className="scroll-mt-24 border-t section-surface">
-      <div className="container py-10 md:py-14">
+      <div className="container pt-6 md:pt-8 pb-10 md:pb-14">
         <header className="mb-6 md:mb-8 text-center">
           <h2 className="heading-display text-2xl md:text-3xl font-bold">Quick Access</h2>
           <p className="text-sm text-muted-foreground">Jump directly to an agent</p>

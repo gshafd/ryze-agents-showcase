@@ -12,7 +12,7 @@ const Hero = () => {
       </Helmet>
       <div className="absolute inset-0 hero-overlay" aria-hidden="true" />
       <img src={heroBg} alt="Abstract AI network background in purple and teal" className="absolute inset-0 w-full h-full object-cover opacity-30" loading="eager" />
-      <div className="relative container py-20 md:py-28">
+      <div className="relative container pt-20 md:pt-28 pb-6 md:pb-8">
         <div className="mx-auto max-w-4xl text-center animate-fade-in">
           <h1 className="heading-display text-4xl md:text-6xl font-extrabold text-gradient-primary">
             FD Ryze Autonomous Agents
