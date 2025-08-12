@@ -13,35 +13,62 @@ const QuickAccessGrid = () => {
           <p className="text-sm text-muted-foreground">Jump directly to an agent</p>
         </header>
         <nav aria-label="Quick access agents">
-          <div className="mx-auto max-w-5xl">
-            <ul className="grid grid-cols-2 sm:grid-cols-3 gap-6 justify-items-center w-fit mx-auto">
-              {agents.map((agent) => {
-                const Icon = (Icons as any)[agent.icon] as React.ComponentType<{ className?: string; "aria-hidden"?: boolean }>;
-                return (
-                  <li key={agent.slug} className="animate-fade-in">
-                    <Link
-                      to={`/agents/${agent.slug}`}
-                      className="group block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-lg"
-                      aria-label={`${agent.name} details`}
-                    >
-                      <div className="relative flex h-40 w-36 md:h-44 md:w-40 flex-col items-center justify-center rounded-lg border border-border bg-card/50 p-4 transition-transform duration-200 hover:scale-105 hover:ring-2 hover:ring-primary/40 hover:border-primary/40 shadow-sm hover:shadow-lg cursor-pointer">
-                        <Badge
-                          variant="outline"
-                          className={`absolute -top-3 left-1/2 -translate-x-1/2 font-semibold px-3 py-1 rounded-full bg-background/90 backdrop-blur border-border shadow-sm whitespace-nowrap ${agent.industry === 'E-Commerce' ? 'text-[10px] md:text-xs' : 'text-xs md:text-sm'}`}
-                        >
-                          {industryMap[agent.industry] || agent.industry}
-                        </Badge>
-                        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-accent/20 ring-1 ring-accent/30 transition-colors group-hover:bg-accent/30">
-                          {Icon ? <Icon className="size-6 text-primary" aria-hidden /> : null}
+            <div className="mx-auto max-w-5xl">
+              <ul className="grid grid-cols-5 gap-6 justify-items-center w-fit mx-auto">
+                {agents.slice(0, 5).map((agent) => {
+                  const Icon = (Icons as any)[agent.icon] as React.ComponentType<{ className?: string; "aria-hidden"?: boolean }>;
+                  return (
+                    <li key={agent.slug} className="animate-fade-in">
+                      <Link
+                        to={`/agents/${agent.slug}`}
+                        className="group block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-lg"
+                        aria-label={`${agent.name} details`}
+                      >
+                        <div className="relative flex h-40 w-36 md:h-44 md:w-40 flex-col items-center justify-center rounded-lg border border-border bg-card/50 p-4 transition-transform duration-200 hover:scale-105 hover:ring-2 hover:ring-primary/40 hover:border-primary/40 shadow-sm hover:shadow-lg cursor-pointer">
+                          <Badge
+                            variant="outline"
+                            className={`absolute -top-3 left-1/2 -translate-x-1/2 font-semibold px-3 py-1 rounded-full bg-background/90 backdrop-blur border-border shadow-sm whitespace-nowrap ${agent.industry === 'E-Commerce' ? 'text-[10px] md:text-xs' : 'text-xs md:text-sm'}`}
+                          >
+                            {industryMap[agent.industry] || agent.industry}
+                          </Badge>
+                          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-accent/20 ring-1 ring-accent/30 transition-colors group-hover:bg-accent/30">
+                            {Icon ? <Icon className="size-6 text-primary" aria-hidden /> : null}
+                          </div>
+                          <span className="mt-3 text-center text-sm font-semibold text-foreground leading-tight">{agent.name}</span>
                         </div>
-                        <span className="mt-3 text-center text-sm font-semibold text-foreground leading-tight">{agent.name}</span>
-                      </div>
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+              <ul className="mt-6 grid grid-cols-4 gap-6 justify-items-center w-fit mx-auto">
+                {agents.slice(5).map((agent) => {
+                  const Icon = (Icons as any)[agent.icon] as React.ComponentType<{ className?: string; "aria-hidden"?: boolean }>;
+                  return (
+                    <li key={agent.slug} className="animate-fade-in">
+                      <Link
+                        to={`/agents/${agent.slug}`}
+                        className="group block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-lg"
+                        aria-label={`${agent.name} details`}
+                      >
+                        <div className="relative flex h-40 w-36 md:h-44 md:w-40 flex-col items-center justify-center rounded-lg border border-border bg-card/50 p-4 transition-transform duration-200 hover:scale-105 hover:ring-2 hover:ring-primary/40 hover:border-primary/40 shadow-sm hover:shadow-lg cursor-pointer">
+                          <Badge
+                            variant="outline"
+                            className={`absolute -top-3 left-1/2 -translate-x-1/2 font-semibold px-3 py-1 rounded-full bg-background/90 backdrop-blur border-border shadow-sm whitespace-nowrap ${agent.industry === 'E-Commerce' ? 'text-[10px] md:text-xs' : 'text-xs md:text-sm'}`}
+                          >
+                            {industryMap[agent.industry] || agent.industry}
+                          </Badge>
+                          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-accent/20 ring-1 ring-accent/30 transition-colors group-hover:bg-accent/30">
+                            {Icon ? <Icon className="size-6 text-primary" aria-hidden /> : null}
+                          </div>
+                          <span className="mt-3 text-center text-sm font-semibold text-foreground leading-tight">{agent.name}</span>
+                        </div>
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
         </nav>
       </div>
     </section>
