@@ -25,8 +25,8 @@ const Footer = () => {
         </div>
         <div>
           <h3 className="text-sm font-semibold mb-2">Contact</h3>
-          <a href="mailto:hello@fulcrumdigital.com" className="story-link inline-flex items-center gap-2 text-sm">
-            <Mail className="size-4" /> hello@fulcrumdigital.com
+          <a href="mailto:ai@fulcrumdigital.com" className="story-link inline-flex items-center gap-2 text-sm">
+            <Mail className="size-4" /> ai@fulcrumdigital.com
           </a>
           <div className="mt-4 flex gap-3">
             <a aria-label="LinkedIn" href="#" className="hover-scale text-muted-foreground hover:text-foreground"><Linkedin className="size-5" /></a>
