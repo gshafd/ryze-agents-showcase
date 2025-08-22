@@ -62,7 +62,7 @@ const Index = () => {
                 <div className="flex items-center justify-between mb-8">
                   <div className="flex items-center gap-3">
                     <h2 className="heading-display text-2xl md:text-3xl font-bold">{ind.title}</h2>
-                    <div className="px-3 py-1 rounded-full bg-accent/20 border border-accent/30">
+                    <div className="px-3 py-1 rounded-full bg-accent/40 border border-accent/50">
                       <span className="text-sm font-medium text-accent-foreground">{totalPipeline} in pipeline</span>
                     </div>
                   </div>
