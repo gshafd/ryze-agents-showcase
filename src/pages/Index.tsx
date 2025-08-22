@@ -20,7 +20,7 @@ const Index = () => {
           const pipelineCounts = {
             "Insurance": 10,
             "Finance": 7,
-            "E-Commerce": 6,
+            "E-Commerce": 7,
             "Higher Education": 5,
             "Cybersecurity": 2,
             "Manufacturing-Retail-Logistics": 5
