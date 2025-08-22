@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section id="top" className="relative overflow-hidden">
       <Helmet>
-        <title>FD Ryze Autonomous Agents | TechXchange 2025</title>
+        <title>FD Ryze Infinity | TechXchange 2025</title>
         <meta name="description" content="Explore FD Ryze Autonomous Agents — a clean, minimal tech showcase at TechXchange 2025. Insurance, Finance, Higher Education, E‑Commerce, Cybersecurity, and more." />
         <link rel="canonical" href="/" />
       </Helmet>
@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="relative container pt-20 md:pt-28 pb-6 md:pb-8">
         <div className="mx-auto max-w-4xl text-center animate-fade-in">
           <h1 className="heading-display text-4xl md:text-6xl font-extrabold text-gradient-primary">
-            FD Ryze Autonomous Agents
+            FD Ryze Infinity
           </h1>
           <p className="mt-4 text-lg md:text-xl text-muted-foreground">
             TechXchange 2025: Emerging Tech in the Intelligence Economy
