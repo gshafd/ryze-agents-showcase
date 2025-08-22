@@ -48,6 +48,7 @@ const Index = () => {
               { name: "Transaction Fraud Detector", icon: "Shield", description: "Monitors payments in real time, detecting fraudulent patterns before transactions are processed." }
             ],
             "E-Commerce": [
+              { name: "Search by Intent", icon: "Search", description: "AI shopping assistant that understands natural language and recommends tailored products for personalized experiences." },
               { name: "Personalized Product Recommender", icon: "Target", description: "Analyzes browsing and purchase behavior to suggest hyper-relevant products, boosting conversions." },
               { name: "Conversational Shopping Assistant", icon: "MessageCircle", description: "Provides interactive product guidance and customer support via chat, mimicking a personal shopper." },
               { name: "Cart Recovery AI", icon: "ShoppingCart", description: "Identifies abandoned carts, predicts customer intent, and triggers personalized recovery campaigns." },

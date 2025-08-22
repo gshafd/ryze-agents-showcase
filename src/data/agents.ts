@@ -63,14 +63,6 @@ export const agents: Agent[] = [
       "End‑to‑end order orchestration system that synchronizes inventory across multiple channels, predicts stockouts using demand signals, automates cross‑platform pricing strategies, and manages returns logistics—processing 1M+ SKUs while maintaining 99.9% accuracy in real‑time fulfillment promises.",
   },
   {
-    slug: "search-by-intent",
-    name: "Search by Intent",
-    industry: "E-Commerce",
-    icon: "Search",
-    description:
-      "An AI shopping assistant that understands natural language, engages users through follow‑up questions, and recommends tailored products—turning search into a personalized, cart‑ready experience.",
-  },
-  {
     slug: "seo-orchestrator",
     name: "SEO Orchestrator",
     industry: "E-Commerce",
